@@ -1,0 +1,87 @@
+	body
+	{
+		background-color: #1B2838;
+	}
+	
+	.main {
+		width: 100%;
+		max-width: 1280px;
+		padding: 0 30px;
+		margin: 32px auto;
+	}
+
+	.main h2 {
+		margin-top: 80px;
+		margin-bottom: 24px;
+		text-align: center;
+		font-size: 2.5rem;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	#header
+	{
+		display: flex;
+	}
+
+	#header img
+	{
+		margin: 0 auto;
+		width: 200px;
+	}
+
+	h3
+	{
+		font-size: 1.5rem;
+	}
+
+	.Level {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-self: center;
+		width: 50rem;
+		margin: 0 auto;
+	}
+
+	.Level .level-item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.Level h1,
+	h5 {
+		margin-bottom: 0;
+	}
+
+	.Level h1 {
+		font-weight: 600;
+		font-size: 3em;
+	}
+
+	.Level h4 {
+		margin-bottom: -0.5rem;
+	}
+
+	.Level h5 {
+		font-weight: 600;
+		font-size: 1.2em;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.Level .is-cherry h1, h5 { color: red; }
+
+	.Level .is-cherry h4 {color: red;}
+
+	.Level .is-blue h1, h5 { color: yellow; }
+
+	.Level .is-blue h4 {color: yellow;}
+
+	.Level .is-green h1, h5 { color: green; }
+
+	.Level .is-green h4 {color: green;}
+
+	.Level .is-gray h1, h5 { color: gray; }
+
+	.Level .is-gray h4 {color: gray;} 

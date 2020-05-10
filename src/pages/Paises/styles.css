@@ -1,0 +1,45 @@
+ul {
+    /**display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+    **/
+    display: inline-flex;
+    width: 20%;
+    list-style: none;
+}
+
+ul li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+ul li strong {
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+ul li p+strong {
+    margin-top: 32px;
+}
+
+ul li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+ul li div {
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.hr1 {
+    border: 0;
+    border-top: 1px solid #CCC;
+}
