@@ -154,22 +154,13 @@
 	  top: 0;
 	}
 	table tbody tr td:nth-child(1):before {
-	  content: "Date";
+	  content: "Estado";
 	}
 	table tbody tr td:nth-child(2):before {
-	  content: "Order ID";
+	  content: "Confirmados";
 	}
 	table tbody tr td:nth-child(3):before {
-	  content: "Name";
-	}
-	table tbody tr td:nth-child(4):before {
-	  content: "Price";
-	}
-	table tbody tr td:nth-child(5):before {
-	  content: "Quantity";
-	}
-	table tbody tr td:nth-child(6):before {
-	  content: "Total";
+	  content: "Mortos";
 	}
   
 	.column4,
