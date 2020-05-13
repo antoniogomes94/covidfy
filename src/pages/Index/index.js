@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import api from '../../services/api.js';
 import "./styles.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Tabela from "../Tabela/index";
 import Cabecalho from "../Cabecalho/Index";
@@ -42,25 +43,22 @@ export default function Profile() {
     console.log(paises);
   return (
     <div className="main">
-      <Cabecalho></Cabecalho>
       <h2>Brasil</h2>
-      <div className="Level">
-        <div className="level-item is-cherry fadeInUp">
+      <div className="row Level">
+        <div className="level-item is-cherry col-md-3 col-sm-1">
           <h5>Confirmados</h5>
           <h1>{brasil.confirmed}</h1>
         </div>
 
         <div
-          className="level-item is-blue fadeInUp"
-          style={{animationDelay: '1.1s'}}
+          className="level-item is-blue col-md-3 col-sm-1"
         >
           <h5 className="heading">Ativos</h5>
           <h1 className="title has-text-info">{brasil.cases}</h1>
         </div>
 
         <div
-          className="level-item is-green fadeInUp"
-          style={{animationDelay: '1.2s'}}
+          className="level-item is-green col-md-3 col-sm-1"
         >
           <h5 className="heading">Recuperados</h5>
           <h1 className="title has-text-success">
@@ -69,8 +67,7 @@ export default function Profile() {
         </div>
 
         <div
-          className="level-item is-gray fadeInUp"
-          style={{animationDelay: '1.3s'}}
+          className="level-item is-gray col-md-3 col-sm-1"
         >
           <h5 className="heading">Mortes</h5>
           <h1 className="title has-text-grey">{brasil.deaths}</h1>
@@ -79,6 +76,13 @@ export default function Profile() {
 
       <Paises/>
       <Tabela></Tabela>
+      <div id="footer-bottom" class="clr">
+        <div id="footer-bottom-inner" class="container clr">
+          <div class="footer-bottom-flex clr">
+            <div id="copyright" class="clr"> Desenvolvido por <a href="https://github.com/antoniogomes94" target="_blank">Antônio Gomes</a>.</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

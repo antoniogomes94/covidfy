@@ -1,37 +1,28 @@
-ul {
-    /**display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 24px;
-    list-style: none;
-    **/
-    display: inline-flex;
-    width: 20%;
-    list-style: none;
-}
-
-ul li {
+.pais {
     background: #fff;
     padding: 10px;
     border-radius: 8px;
     position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-ul li strong {
+.pais strong {
     margin-bottom: 16px;
     color: #41414d;
 }
 
-ul li p+strong {
+.pais p+strong {
     margin-top: 32px;
 }
 
-ul li p {
+.pais p {
     color: #737380;
     line-height: 21px;
     font-size: 16px;
 }
 
-ul li div {
+.pais div {
     margin-bottom: 20px;
 }
 

@@ -63,113 +63,93 @@ export default function Paises() {
 
   return (
     <div className="outros">
-    <h2>Outros Países</h2>
-        <ul>
-            <li>
-                <div>
-                    <div>
-                        <h3>EUA</h3>  
-                    </div> 
-                    <div>
-                    <span><FaCheck/></span> 
-                        <strong>{eua.confirmed}</strong> Confirmados
-                    </div>
-                    <div>
-                    <span><TiWarning/></span> 
-                        <strong>{eua.cases}</strong> Ativos
-                    </div>
-                    <div>
-                    <span><FiRefreshCw/></span> 
-                        <strong>{eua.recovered}</strong> Recuperadoss
-                    </div>
-                    <div>
-                    <span><FaSkull/></span> 
-                        <strong>{eua.deaths}</strong> Mortes
-                    </div>
-                    <div>
-                    <hr class="hr1"></hr>
-                    <span><BsClockFill/> 
-                        <strong>Atualizado</strong> 21/04/2020 - 09:33
-                    </span>
-                    </div> 
-                </div>  
-            </li>
-        </ul>
+        <h2>Outros Países</h2>
+        <div className="row">
+            <div className="col-md col-sm-1 pais">
+                        <div>
+                            <h3>EUA</h3>  
+                        </div> 
+                        <div>
+                        <span><FaCheck/></span> 
+                            <strong>{eua.confirmed}</strong> Confirmados
+                        </div>
+                        <div>
+                        <span><TiWarning/></span> 
+                            <strong>{eua.cases}</strong> Ativos
+                        </div>
+                        <div>
+                        <span><FiRefreshCw/></span> 
+                            <strong>{eua.recovered}</strong> Recuperadoss
+                        </div>
+                        <div>
+                        <span><FaSkull/></span> 
+                            <strong>{eua.deaths}</strong> Mortes
+                        </div>
+                        <div>
+                        <hr class="hr1"></hr>
+                        <span><BsClockFill/> 
+                            <strong>Atualizado</strong> 21/04/2020 - 09:33
+                        </span>
+                        </div> 
+                    </div>  
 
+            <div className="col-md col-sm-1 pais">
+                        <div>
+                            <h3>Espanha</h3>  
+                        </div> 
+                        <div>
+                        <span><FaCheck/></span> 
+                            <strong>{espanha.confirmed}</strong> Confirmados
+                        </div>
+                        <div>
+                        <span><TiWarning/></span> 
+                            <strong>{espanha.cases}</strong> Ativos
+                        </div>
+                        <div>
+                        <span><FiRefreshCw/></span> 
+                            <strong>{espanha.recovered}</strong> Recuperadoss
+                        </div>
+                        <div>
+                        <span><FaSkull/></span> 
+                            <strong>{espanha.deaths}</strong> Mortes
+                        </div>
+                        <div>
+                        <hr class="hr1"></hr>
+                        <span><BsClockFill/> 
+                            <strong>Atualizado</strong> 21/04/2020 - 09:33
+                        </span>
+                        </div> 
+                    </div>  
 
-        <ul>
-            <li>
-                <div>
-                    <div>
-                        <h3>Espanha</h3>  
-                    </div> 
-                    <div>
-                    <span><FaCheck/></span> 
-                        <strong>{espanha.confirmed}</strong> Confirmados
-                    </div>
-                    <div>
-                    <span><TiWarning/></span> 
-                        <strong>{espanha.cases}</strong> Ativos
-                    </div>
-                    <div>
-                    <span><FiRefreshCw/></span> 
-                        <strong>{espanha.recovered}</strong> Recuperadoss
-                    </div>
-                    <div>
-                    <span><FaSkull/></span> 
-                        <strong>{espanha.deaths}</strong> Mortes
-                    </div>
-                    <div>
-                    <hr class="hr1"></hr>
-                    <span><BsClockFill/> 
-                        <strong>Atualizado</strong> 21/04/2020 - 09:33
-                    </span>
-                    </div> 
-                </div>  
-            </li>
-        </ul>
+            <div className="col-md col-sm-1 pais">
+                        <div>
+                            <h3>Italia</h3>  
+                        </div> 
+                        <div>
+                        <span><FaCheck/></span> 
+                            <strong>{italia.confirmed}</strong> Confirmados
+                        </div>
+                        <div>
+                        <span><TiWarning/></span> 
+                            <strong>{italia.cases}</strong> Ativos
+                        </div>
+                        <div>
+                        <span><FiRefreshCw/></span> 
+                            <strong>{italia.recovered}</strong> Recuperadoss
+                        </div>
+                        <div>
+                        <span><FaSkull/></span> 
+                            <strong>{italia.deaths}</strong> Mortes
+                        </div>
+                        <div>
+                        <hr class="hr1"></hr>
+                        <span><BsClockFill/> 
+                            <strong>Atualizado</strong> 21/04/2020 - 09:33
+                        </span>
+                        </div> 
+                    </div>  
 
-
-
-
-
-        <ul>
-            <li>
-                <div>
-                    <div>
-                        <h3>Italia</h3>  
-                    </div> 
-                    <div>
-                    <span><FaCheck/></span> 
-                        <strong>{italia.confirmed}</strong> Confirmados
-                    </div>
-                    <div>
-                    <span><TiWarning/></span> 
-                        <strong>{italia.cases}</strong> Ativos
-                    </div>
-                    <div>
-                    <span><FiRefreshCw/></span> 
-                        <strong>{italia.recovered}</strong> Recuperadoss
-                    </div>
-                    <div>
-                    <span><FaSkull/></span> 
-                        <strong>{italia.deaths}</strong> Mortes
-                    </div>
-                    <div>
-                    <hr class="hr1"></hr>
-                    <span><BsClockFill/> 
-                        <strong>Atualizado</strong> 21/04/2020 - 09:33
-                    </span>
-                    </div> 
-                </div>  
-            </li>
-        </ul>
-
-
-
-        <ul>
-            <li>
-                <div>
+            <div className="col-md col-sm-1 pais">
                     <div>
                         <h3>China</h3>  
                     </div> 
@@ -195,41 +175,8 @@ export default function Paises() {
                         <strong>Atualizado</strong> 21/04/2020 - 09:33
                     </span>
                     </div> 
-                </div>  
-            </li>
-        </ul>
-
-        <ul>
-            <li>
-                <div>
-                    <div>
-                        <h3>Reino Unido</h3>  
-                    </div> 
-                    <div>
-                    <span><FaCheck/></span> 
-                        <strong>{reinoUnido.confirmed}</strong> Confirmados
-                    </div>
-                    <div>
-                    <span><TiWarning/></span> 
-                        <strong>{reinoUnido.cases}</strong> Ativos
-                    </div>
-                    <div>
-                    <span><FiRefreshCw/></span> 
-                        <strong>{reinoUnido.recovered}</strong> Recuperadoss
-                    </div>
-                    <div>
-                    <span><FaSkull/></span> 
-                        <strong>{reinoUnido.deaths}</strong> Mortes
-                    </div>
-                    <div>
-                    <hr class="hr1"></hr>
-                    <span><BsClockFill/> 
-                        <strong>Atualizado</strong> 21/04/2020 - 09:33
-                    </span>
-                    </div> 
-                </div>  
-            </li>
-        </ul>
+                </div>
+        </div>
     </div>
   );
 }
