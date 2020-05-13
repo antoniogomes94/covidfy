@@ -43,6 +43,8 @@ export default function Profile() {
     console.log(paises);
   return (
     <div className="main">
+      <Cabecalho></Cabecalho>
+      
       <h2>Brasil</h2>
       <div className="row Level">
         <div className="level-item is-cherry col-md-3 col-sm-1">
