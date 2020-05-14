@@ -5,10 +5,13 @@ import { TiWarning } from "react-icons/ti";
 import { FaCheck } from "react-icons/fa";
 import { BsClockFill } from "react-icons/bs";
 
+import Moment from 'moment';
+
 import api from '../../services/api.js';
 import "./styles.css";
 
 export default function Paises() {
+    Moment.locale('PT-BR');
 
     const [eua, setEUA] = useState([])
     const [italia, setItalia] = useState([])
@@ -87,9 +90,8 @@ export default function Paises() {
                         </div>
                         <div>
                         <hr class="hr1"></hr>
-                        <span><BsClockFill/> 
-                            <strong>Atualizado</strong> 21/04/2020 - 09:33
-                        </span>
+                        <span><BsClockFill/></span>
+                        <strong>Atualizado</strong> {Moment(eua.updated_at).format('DD/MM/YYYY LT')}
                         </div> 
                     </div>  
 
@@ -115,9 +117,8 @@ export default function Paises() {
                         </div>
                         <div>
                         <hr class="hr1"></hr>
-                        <span><BsClockFill/> 
-                            <strong>Atualizado</strong> 21/04/2020 - 09:33
-                        </span>
+                        <span><BsClockFill/></span>
+                        <strong>Atualizado</strong> {Moment(espanha.updated_at).format('DD/MM/YYYY LT')}
                         </div> 
                     </div>  
 
@@ -143,9 +144,8 @@ export default function Paises() {
                         </div>
                         <div>
                         <hr class="hr1"></hr>
-                        <span><BsClockFill/> 
-                            <strong>Atualizado</strong> 21/04/2020 - 09:33
-                        </span>
+                        <span><BsClockFill/></span>
+                        <strong>Atualizado</strong> {Moment(italia.updated_at).format('DD/MM/YYYY LT')}
                         </div> 
                     </div>  
 
@@ -171,9 +171,8 @@ export default function Paises() {
                     </div>
                     <div>
                     <hr class="hr1"></hr>
-                    <span><BsClockFill/> 
-                        <strong>Atualizado</strong> 21/04/2020 - 09:33
-                    </span>
+                    <span><BsClockFill/> </span>
+                    <strong>Atualizado</strong> {Moment(china.updated_at).format('DD/MM/YYYY LT')}
                     </div> 
                 </div>
         </div>

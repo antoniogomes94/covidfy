@@ -26,6 +26,10 @@
     margin-bottom: 20px;
 }
 
+.pais div span{
+    margin-right: 10px;
+}
+
 hr {
     margin: 10px 0;
 }
