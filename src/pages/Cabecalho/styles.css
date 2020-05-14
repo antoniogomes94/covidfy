@@ -7,3 +7,10 @@
 {
 	margin: 0 auto;
 }
+
+@media (max-width: 576px) {
+	#header img
+	{
+		width: 250px;
+	}
+}
