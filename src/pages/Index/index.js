@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Tabela from "../Tabela/index";
 import Cabecalho from "../Cabecalho/Index";
 import Paises from "../Paises/Index";
+import Sobre from "../Sobre/Index";
 
 export default function Profile() {
 
@@ -78,7 +79,8 @@ export default function Profile() {
       </div>
 
       <Paises/>
-      <Tabela></Tabela>
+      <Tabela/>
+      <Sobre/>
       <div id="footer-bottom" class="clr">
         <div id="footer-bottom-inner" class="container clr">
           <div class="footer-bottom-flex clr">
