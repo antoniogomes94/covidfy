@@ -88,11 +88,6 @@ export default function Paises() {
                         <span><FaSkull/></span> 
                             <strong>{eua.deaths}</strong> Mortes
                         </div>
-                        <div>
-                        <hr class="hr1"></hr>
-                        <span><BsClockFill/></span>
-                        <strong>Atualizado</strong> {Moment(eua.updated_at).format('DD/MM/YYYY LT')}
-                        </div> 
                     </div>  
 
             <div className="col-md col-sm-1 pais">
@@ -115,11 +110,6 @@ export default function Paises() {
                         <span><FaSkull/></span> 
                             <strong>{espanha.deaths}</strong> Mortes
                         </div>
-                        <div>
-                        <hr class="hr1"></hr>
-                        <span><BsClockFill/></span>
-                        <strong>Atualizado</strong> {Moment(espanha.updated_at).format('DD/MM/YYYY LT')}
-                        </div> 
                     </div>  
 
             <div className="col-md col-sm-1 pais">
@@ -142,11 +132,6 @@ export default function Paises() {
                         <span><FaSkull/></span> 
                             <strong>{italia.deaths}</strong> Mortes
                         </div>
-                        <div>
-                        <hr class="hr1"></hr>
-                        <span><BsClockFill/></span>
-                        <strong>Atualizado</strong> {Moment(italia.updated_at).format('DD/MM/YYYY LT')}
-                        </div> 
                     </div>  
 
             <div className="col-md col-sm-1 pais">
@@ -169,11 +154,6 @@ export default function Paises() {
                     <span><FaSkull/></span> 
                         <strong>{china.deaths}</strong> Mortes
                     </div>
-                    <div>
-                    <hr class="hr1"></hr>
-                    <span><BsClockFill/> </span>
-                    <strong>Atualizado</strong> {Moment(china.updated_at).format('DD/MM/YYYY LT')}
-                    </div> 
                 </div>
         </div>
     </div>

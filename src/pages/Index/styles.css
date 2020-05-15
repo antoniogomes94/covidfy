@@ -15,10 +15,19 @@
 		text-transform: uppercase;
 	}
 
-	h3
-	{
+	h3{
 		font-size: 1.5rem;
 	}
+	
+	.data-atualizacao{
+		margin-top: 15px;;
+	}
+
+	.data-atualizacao p{
+		text-align: center;
+		color: #fff;
+	}
+
 
 	.Level .level-item {
 		display: flex;

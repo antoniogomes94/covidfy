@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Moment from 'moment';
 
 import api from '../../services/api.js';
 
@@ -54,28 +55,25 @@ export default function Profile() {
           <h1>{brasil.confirmed}</h1>
         </div>
 
-        <div
-          className="level-item is-blue col-md-3 col-sm-1"
-        >
+        <div className="level-item is-blue col-md-3 col-sm-1">
           <h5 className="heading">Ativos</h5>
           <h1 className="title has-text-info">{brasil.cases}</h1>
         </div>
 
-        <div
-          className="level-item is-green col-md-3 col-sm-1"
-        >
+        <div className="level-item is-green col-md-3 col-sm-1">
           <h5 className="heading">Recuperados</h5>
           <h1 className="title has-text-success">
           {brasil.recovered}
           </h1>
         </div>
 
-        <div
-          className="level-item is-gray col-md-3 col-sm-1"
-        >
+        <div className="level-item is-gray col-md-3 col-sm-1">
           <h5 className="heading">Mortes</h5>
           <h1 className="title has-text-grey">{brasil.deaths}</h1>
         </div>
+      </div>
+      <div className="data-atualizacao">
+        <p>Atualizado as {Moment(brasil.updated_at).format('DD/MM/YYYY LT')}</p>
       </div>
 
       <Paises/>
