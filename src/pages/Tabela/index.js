@@ -15,10 +15,8 @@ export default function Profile() {
       loadEstados()
   }, [])
 
-  console.log(estados);
-
   return (
-    <div className="tabelaUF">
+    <div className="tabelaUF row">
         <table>
           <thead>
             <tr class="table100-head">

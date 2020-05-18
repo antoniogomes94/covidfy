@@ -43,7 +43,7 @@ export default function Profile() {
       loadPaises()
     }, [])
 
-    console.log(paises);
+  document.title = 'Covidfy'
   return (
     <div className="main">
       <Cabecalho></Cabecalho>
