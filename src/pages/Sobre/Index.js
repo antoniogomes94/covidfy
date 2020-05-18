@@ -45,6 +45,13 @@ export default function Sobre() {
                     <p className="credito"><a href="https://br.freepik.com/fotos-vetores-gratis/logotipo">Adaptaçao de logotipo vetor criado por freepik - br.freepik.com</a></p>
                 </div>
             </div>
+            <div className="row">
+              <div className="creditos">
+                <hr className="hr1"></hr>
+                <h3>Isenção de Responsabilidade</h3>
+                    <p className="credito">Todos os dados apresentados neste site foram publicados de boa-fé, com a finalidade exclusiva de informar. Não oferecemos nenhuma garantia quanto à integridade, confiabilidade e precisão dessas informações, até mesmo porque todos esses dados foram coletados ou produzidos por terceiros. O leitor estará por sua conta e risco se tomar qualquer atitude com base nas informações aqui apresentadas.</p>
+                </div>
+            </div>
         </div>
       </div>
   );
