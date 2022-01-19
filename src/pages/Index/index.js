@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { default as NumberFormat } from 'react-number-format';
 import Moment from 'moment';
 
 import api from '../../services/api.js';
@@ -50,26 +51,13 @@ export default function Profile() {
       
       <h2>Brasil</h2>
       <div className="row Level">
-        <div className="level-item is-cherry col-md-3 col-sm-1">
-          <h5>Confirmados</h5>
-          <h1>{brasil.confirmed}</h1>
+        <div className="level-item is-cherry col-lg-6 col-md-6 col-sm-1">
+          <h5>Casos Confirmados</h5>
+          <h1><NumberFormat value={brasil.confirmed} displayType={'text'} format="##.###.###"/></h1>
         </div>
-
-        <div className="level-item is-blue col-md-3 col-sm-1">
-          <h5 className="heading">Ativos</h5>
-          <h1 className="title has-text-info">{brasil.cases}</h1>
-        </div>
-
-        <div className="level-item is-green col-md-3 col-sm-1">
-          <h5 className="heading">Recuperados</h5>
-          <h1 className="title has-text-success">
-          {brasil.recovered}
-          </h1>
-        </div>
-
-        <div className="level-item is-gray col-md-3 col-sm-1">
-          <h5 className="heading">Mortes</h5>
-          <h1 className="title has-text-grey">{brasil.deaths}</h1>
+        <div className="level-item is-gray col-lg-6 col-md-6 col-sm-1">
+          <h5 className="heading">Mortes Confirmadas</h5>
+          <h1 className="title has-text-grey"><NumberFormat value={brasil.deaths} displayType={'text'} format="###.###"/></h1>
         </div>
       </div>
       <div className="data-atualizacao">

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { default as NumberFormat } from 'react-number-format';
 import api from '../../services/api.js';
 
 import "./styles.css";

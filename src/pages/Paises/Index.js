@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { default as NumberFormat } from 'react-number-format';
 import { FaSkull } from "react-icons/fa";
-import { FiRefreshCw } from "react-icons/fi";
-import { TiWarning } from "react-icons/ti";
 import { FaCheck } from "react-icons/fa";
-import { BsClockFill } from "react-icons/bs";
 
 import Moment from 'moment';
 
@@ -13,55 +11,45 @@ import "./styles.css";
 export default function Paises() {
     Moment.locale('PT-BR');
 
-    const [eua, setEUA] = useState([])
-    const [italia, setItalia] = useState([])
-    const [espanha, setEspanha] = useState([])
-    const [china, setChina] = useState([])
-    const [reinoUnido, setReinoUnido] = useState([])
+    const [pais1, setPais1] = useState([])
+    const [pais2, setPais2] = useState([])
+    const [pais3, setPais3] = useState([])
+    const [pais4, setPais4] = useState([])
  
     useEffect(() => {
-        async function loadEUA() {
+        async function loadPais1() {
             const response = await api.get('/us')
-            setEUA(response.data.data);
+            setPais1(response.data.data);
         }
 
-        loadEUA()
+        loadPais1()
     }, [])
 
     useEffect(() => {
-      async function loadItalia() {
-          const response = await api.get('/italy');
-          setItalia(response.data.data);
+      async function loadPais2() {
+          const response = await api.get('/united kingdom');
+          setPais2(response.data.data);
       }
 
-      loadItalia()
+      loadPais2()
     }, [])
 
     useEffect(() => {
-      async function loadEspanha() {
-          const response = await api.get('/spain');
-          setEspanha(response.data.data);
+      async function loadPais3() {
+          const response = await api.get('/india');
+          setPais3(response.data.data);
       }
 
-      loadEspanha()
+      loadPais3()
     }, [])
 
     useEffect(() => {
-        async function loadChina() {
-            const response = await api.get('/china');
-            setChina(response.data.data);
+        async function loadPais4() {
+            const response = await api.get('/russia');
+            setPais4(response.data.data);
         }
   
-        loadChina()
-    }, [])
-
-    useEffect(() => {
-        async function loadReinoUnido() {
-            const response = await api.get('/united kingdom');
-            setReinoUnido(response.data.data);
-        }
-  
-        loadReinoUnido()
+        loadPais4()
     }, [])
 
   return (
@@ -74,85 +62,53 @@ export default function Paises() {
                         </div> 
                         <div>
                         <span><FaCheck/></span> 
-                            <strong>{eua.confirmed}</strong> Confirmados
-                        </div>
-                        <div>
-                        <span><TiWarning/></span> 
-                            <strong>{eua.cases}</strong> Ativos
-                        </div>
-                        <div>
-                        <span><FiRefreshCw/></span> 
-                            <strong>{eua.recovered}</strong> Recuperadoss
+                            <strong><NumberFormat value={pais1.confirmed} displayType={'text'} format="##.###.###"/></strong> Confirmados
                         </div>
                         <div>
                         <span><FaSkull/></span> 
-                            <strong>{eua.deaths}</strong> Mortes
+                            <strong><NumberFormat value={pais1.deaths} displayType={'text'} format="###.###"/></strong> Mortes
                         </div>
                     </div>  
 
             <div className="col-md col-sm-1 pais">
                         <div>
-                            <h3>Espanha</h3>  
+                            <h3>Reino Unido</h3>  
                         </div> 
                         <div>
-                        <span><FaCheck/></span> 
-                            <strong>{espanha.confirmed}</strong> Confirmados
+                            <span><FaCheck/></span> 
+                            <strong><NumberFormat value={pais2.confirmed} displayType={'text'} format="##.###.###"/></strong> Confirmados
                         </div>
                         <div>
-                        <span><TiWarning/></span> 
-                            <strong>{espanha.cases}</strong> Ativos
-                        </div>
-                        <div>
-                        <span><FiRefreshCw/></span> 
-                            <strong>{espanha.recovered}</strong> Recuperadoss
-                        </div>
-                        <div>
-                        <span><FaSkull/></span> 
-                            <strong>{espanha.deaths}</strong> Mortes
+                            <span><FaSkull/></span> 
+                            <strong><NumberFormat value={pais2.deaths} displayType={'text'} format="###.###"/></strong> Mortes
                         </div>
                     </div>  
 
             <div className="col-md col-sm-1 pais">
                         <div>
-                            <h3>Italia</h3>  
+                            <h3>Índia</h3>  
                         </div> 
                         <div>
-                        <span><FaCheck/></span> 
-                            <strong>{italia.confirmed}</strong> Confirmados
+                            <span><FaCheck/></span> 
+                            <strong><NumberFormat value={pais3.confirmed} displayType={'text'} format="##.###.###"/></strong> Confirmados
                         </div>
                         <div>
-                        <span><TiWarning/></span> 
-                            <strong>{italia.cases}</strong> Ativos
-                        </div>
-                        <div>
-                        <span><FiRefreshCw/></span> 
-                            <strong>{italia.recovered}</strong> Recuperadoss
-                        </div>
-                        <div>
-                        <span><FaSkull/></span> 
-                            <strong>{italia.deaths}</strong> Mortes
+                            <span><FaSkull/></span> 
+                            <strong><NumberFormat value={pais3.deaths} displayType={'text'} format="###.###"/></strong> Mortes
                         </div>
                     </div>  
 
             <div className="col-md col-sm-1 pais">
                     <div>
-                        <h3>China</h3>  
+                        <h3>Rússia</h3>  
                     </div> 
                     <div>
-                    <span><FaCheck/></span> 
-                        <strong>{china.confirmed}</strong> Confirmados
+                        <span><FaCheck/></span> 
+                        <strong><NumberFormat value={pais4.confirmed} displayType={'text'} format="##.###.###"/></strong> Confirmados
                     </div>
                     <div>
-                    <span><TiWarning/></span> 
-                        <strong>{china.cases}</strong> Ativos
-                    </div>
-                    <div>
-                    <span><FiRefreshCw/></span> 
-                        <strong>{china.recovered}</strong> Recuperadoss
-                    </div>
-                    <div>
-                    <span><FaSkull/></span> 
-                        <strong>{china.deaths}</strong> Mortes
+                        <span><FaSkull/></span> 
+                        <strong><NumberFormat value={pais4.deaths} displayType={'text'} format="###.###"/></strong> Mortes
                     </div>
                 </div>
         </div>
